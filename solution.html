@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Sheet 2</title>
+    <!-- MathJax Configuration -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                scale: 0.98,
+                displayAlign: 'left'
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Bengali", sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.4;
+            /* reduced line spacing */
+            font-size: 13px;
+            /* reduced overall font size */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            /* smaller title */
+            margin-bottom: 20px;
+            border-bottom: 1.5px solid #000000;
+            padding-bottom: 10px;
+        }
+
+        .qa-card {
+            margin-bottom: 16px;
+            /* reduced card gap (was 35px) */
+            padding-bottom: 12px;
+            /* reduced padding (was 25px) */
+            border-bottom: 1px solid #e0e0e0;
+            break-inside: auto;
+            /* allows natural flow across pages */
+        }
+
+        .question {
+            font-weight: 600;
+            font-size: 13.5px;
+            /* smaller question font (was 16px) */
+            margin-bottom: 6px;
+        }
+
+        .solution {
+            font-size: 12.5px;
+            /* smaller solution font (was 15px) */
+            margin-left: 0;
+        }
+
+        .solution-title {
+            font-weight: 700;
+            text-decoration: underline;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .ans-highlight {
+            font-weight: 700;
+            margin-top: 6px;
+        }
+
+        .header-container {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 30px 0px 10px 0px;
+            text-align: center;
+            font-family: 'Inter', 'Hind Siliguri', Arial, sans-serif;
+        }
+
+        .main-title {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.2px;
+            margin: 0 0 10px 0;
+        }
+
+        .sub-title {
+            font-size: 19px;
+            font-weight: 500;
+            margin: 0 0 12px 0;
+        }
+
+        .sheet-details {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 0 18px 0;
+            word-spacing: 1px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1.5px solid #222222;
+            margin: 0;
+            width: 100%;
+        }
+
+        .topic-header {
+            padding: 8px 14px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 14.5pt;
+            font-weight: 700;
+            border-radius: 0 4px 4px 0;
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+
+        .topic-header {
+                font-size: 12.5pt;
+                padding: 6px 10px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                background-color: #eee !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+        }
+
+        /* Compact MathJax display equations */
+        mjx-container[jax="CHTML"][display="true"] {
+            margin: 6px 0 !important;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .qa-card {
+                page-break-inside: auto !important;
+                /* prevents huge gaps before cards */
+                break-inside: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1 class="main-title">Kamal’s Physics & Math Nexus</h1>
+        <div class="sub-title">Engineering Admission Program</div>
+        <div class="sheet-details">
+            Physics 1st Paper | Chapter 7: পদার্থের গাঠনিক ধর্ম (Solution Sheet)
+        </div>
+        <hr class="divider">
+    </div>
+    <div class="container">
+        <!-- Topic 1 -->
+        <div class="topic-header">১. অনুদৈর্ঘ্য পীড়ন, বিকৃতি ও ইয়ং-এর গুণাঙ্ক (Young's Modulus, Stress & Strain)</div>
+        <div class="qa-card">
+            <div class="question">
+                ১. $5\text{ kg}$ ও $3\text{ kg}$ ভরের দুটি ব্লক হালকা ও অপ্রসারণশীল সুতা দ্বারা যুক্ত। ব্যবস্থাটিকে একটি
+                ঘর্ষণহীন তলের উপর রাখা আছে। $5\text{ kg}$ ভরের ব্লকের উপর অনুভূমিকের সাথে $30^\circ$ কোণে
+                $20\sqrt{3}\text{ N}$ বল দ্বারা টানা হলে ব্লকদুটির ত্বরণ ও দড়ির টান নির্ণয় কর।
+            </div>
+            <div class="solution">
+                <span class="solution-title">সমাধান:</span><br>
+                প্রযুক্ত বলের অনুভূমিক উপাংশ:
+                $$F_x = F \cos 30^\circ = 20\sqrt{3} \times \frac{\sqrt{3}}{2} = 30\text{ N}$$
+                ব্যবস্থাটির মোট ভর $M = m_1 + m_2 = 5\text{ kg} + 3\text{ kg} = 8\text{ kg}$।<br>
+                সুতরাং, সংস্থাটির ত্বরণ:
+                $$a = \frac{F_x}{M} = \frac{30}{8} = 3.75\text{ m/s}^2$$
+                পিছনের $3\text{ kg}$ ব্লকের ওপর ক্রিয়াশীল একমাত্র অনুভূমিক বল হলো সুতার টান $T$:
+                $$T = m_2 a = 3 \times 3.75 = 11.25\text{ N}$$
+                <div class="ans-highlight">উত্তর: ত্বরণ: $3.75\text{ m/s}^2$, টান: $11.25\text{ N}$</div>
+            </div>
+        </div>
+
+        <div class="qa-card">
+            <div class="question">
+                ২. সর্বাধিক $360\text{ N}$ টান সহ্য করতে পারে এমন দড়ি বেয়ে $30\text{ kg}$ ভরের একটি বানর উপরে উঠছে।
+                দড়িটি না ছিঁড়ে সর্বাধিক কত ত্বরণে বানরটি উপরে উঠতে পারবে?
+            </div>
+            <div class="solution">
+                <span class="solution-title">সমাধান:</span><br>
+                বানর $a$ ত্বরণে উপরে উঠলে দড়ির কার্যকর টান:
+                $$T = m(g + a)$$
+                মান বসিয়ে পাই ($g = 9.8\text{ m/s}^2$):
+                $$360 = 30(9.8 + a) \implies 12 = 9.8 + a \implies a = 12 - 9.8 = 2.2\text{ m/s}^2$$
+                <div class="ans-highlight">উত্তর: $2.2\text{ m/s}^2$</div>
+            </div>
+        </div>
+
+         <!-- Topic 2 -->
+        <div class="topic-header">২. অনুভূমিক তারের অবনমন (Depression / Sagging of Horizontal Wire)</div>
+        <div class="qa-card">
+            <div class="question">
+                ৩. একটি মসৃণ পুলির উপর দিয়ে প্রসারিত একটি হালকা তারের এক প্রান্তে $7\text{ g}$ এবং অন্য প্রান্তে
+                $5\text{ g}$ ভরের দুটি বস্তু বাঁধা আছে। স্থির অবস্থা থেকে যাত্রা শুরু করে $6\text{ s}$ পর রশিটি ছিঁড়ে
+                গেলে হালকা বস্তুটি কত সময়ে যাত্রা স্থানে ফিরে আসবে?
+            </div>
+            <div class="solution">
+                <span class="solution-title">সমাধান:</span><br>
+                এখানে $m_1 = 7\text{ g}$, $m_2 = 5\text{ g}$। সংস্থাটির প্রাথমিক ত্বরণ:
+                $$a = \frac{m_1 - m_2}{m_1 + m_2} g = \frac{7 - 5}{7 + 5} g = \frac{2}{12} g = \frac{g}{6}$$
+                $t_1 = 6\text{ s}$ পরে হালকা বস্তুটি ($5\text{ g}$) উপরের দিকে গতিশীল অবস্থায় যে বেগ ও সরণ অর্জন করে:
+                $$v = a t_1 = \left(\frac{g}{6}\right) \times 6 = g$$
+                $$h = \frac{1}{2} a t_1^2 = \frac{1}{2} \left(\frac{g}{6}\right) \times 36 = 3g$$
+                রশি ছিঁড়ে যাওয়ার মুহূর্তে বস্তুটি ভূমি থেকে $3g$ উচ্চতায় রয়েছে এবং উপরের দিকে এর আদিবেগ $u = g$। এখন এটি
+                কেবলমাত্র অভিকর্ষজ ত্বরণ $g$ এর অধীনে মুক্তভাবে চলবে।<br>
+                যাত্রাস্থানে (প্রারম্ভিক বিন্দুতে) ফিরে আসার জন্য মোট উলম্ব সরণ $s = -h = -3g$:
+                $$s = u t - \frac{1}{2} g t^2 \implies -3g = g t - \frac{1}{2} g t^2$$
+                $$t^2 - 2t - 6 = 0 \implies t = \frac{2 \pm \sqrt{4 - 4(1)(-6)}}{2} = 1 + \sqrt{7} \approx 3.645\text{
+                s}$$
+                <div class="ans-highlight">উত্তর: $3.645\text{ s}$</div>
+            </div>
+        </div>
+
+        <div class="qa-card">
+            <div class="question">
+                ৪. একটি মসৃণ পুলির উপর দিয়ে প্রসারিত একটি হালকা তারের এক প্রান্তে $10\text{ kg}$ ভর এবং অপর প্রান্তে
+                $m$ ভরের একটি হালকা বস্তু যুক্ত। $2\text{ s}$ পর তারটি ছিঁড়ে গেলে হালকা বস্তুটি আরও $4.9\text{ m}$ উপরে
+                উঠলে তার ভর নির্ণয় কর।
+            </div>
+            <div class="solution">
+                <span class="solution-title">সমাধান:</span><br>
+                তারটি ছেঁড়ার পর বস্তুটি উল্লম্বভাবে আরও $h = 4.9\text{ m}$ উপরে উঠে থেমে যায় ($v_{\text{final}} = 0$):
+                $$v^2 = 2 g h \implies v = \sqrt{2 \times 9.8 \times 4.9} = \sqrt{96.04} = 9.8\text{ m/s}$$
+                এই বেগ বস্তুটি তার ছেঁড়ার পূর্ববর্তী $2\text{ s}$-এ অর্জন করেছিল:
+                $$v = a t \implies 9.8 = a \times 2 \implies a = 4.9\text{ m/s}^2$$
+                অ্যাটউড মেশিনের ত্বরণের সূত্রানুসারে:
+                $$a = \frac{10 - m}{10 + m} g \implies 4.9 = \frac{10 - m}{10 + m} \times 9.8 \implies \frac{10 - m}{10
+                + m} = \frac{1}{2}$$
+                $$20 - 2m = 10 + m \implies 3m = 10 \implies m = 3.33\text{ kg}$$
+                <div class="ans-highlight">উত্তর: $3.33\text{ kg}$</div>
+            </div>
+        </div>
+</body>
+
+</html>

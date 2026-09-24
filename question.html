@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পদার্থের গাঠনিক ধর্ম - গাণিতিক সমস্যাবলি</title>
+
+    <!-- Google Fonts for standard Bengali typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- MathJax for rendering math equations -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            chtml: {
+                matchFontHeight: false
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm 15mm 15mm 15mm;
+        }
+
+        body {
+            font-family: 'Noto Serif Bengali', 'Times New Roman', serif;
+            color: #111;
+            background-color: #fff;
+            line-height: 1.5;
+            font-size: 13pt;
+            margin: 0;
+            padding: 15px;
+        }
+
+        h2.main-title {
+            text-align: center;
+            text-decoration: underline;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 18pt;
+        }
+
+        .topic-header {
+            padding: 8px 14px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 14.5pt;
+            font-weight: 700;
+            border-radius: 0 4px 4px 0;
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+
+        .problem-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .problem-item {
+            margin-bottom: 14px;
+            padding-left: 5px;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        .q-label {
+            font-weight: 700;
+            display: inline-block;
+            color: #0f172a;
+        }
+
+        .ans-tag {
+            margin-top: 4px;
+            font-size: 12pt;
+            font-weight: 600;
+        }
+
+        .header-container {
+            width: 100%;
+            max-width: 850px;
+            background-color: #ffffff;
+            padding: 30px 20px 10px 20px;
+            text-align: center;
+            font-family: 'Inter', 'Hind Siliguri', Arial, sans-serif;
+        }
+
+        .main-title {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.2px;
+            margin: 0 0 10px 0;
+        }
+
+        .sub-title {
+            font-size: 19px;
+            font-weight: 500;
+            margin: 0 0 12px 0;
+        }
+
+        .sheet-details {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 0 18px 0;
+            word-spacing: 1px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1.5px solid #222222;
+            margin: 0;
+            width: 100%;
+        }
+
+        @media print {
+            body {
+                font-size: 11pt;
+                padding: 0;
+            }
+
+            .topic-header {
+                font-size: 12.5pt;
+                padding: 6px 10px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                background-color: #eee !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .problem-item {
+                margin-bottom: 10px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1 class="main-title">Kamal’s Physics & Math Nexus</h1>
+        <div class="sub-title">Engineering Admission Program</div>
+        <div class="sheet-details">
+            Physics 1st Paper | Chapter 7: পদার্থের গাঠনিক ধর্ম (Practice Sheet)
+        </div>
+        <hr class="divider">
+    </div>
+    
+    <ul class="problem-list">
+
+        <!-- Topic 1 -->
+        <li class="topic-header">১. অনুদৈর্ঘ্য পীড়ন, বিকৃতি ও ইয়ং-এর গুণাঙ্ক (Young's Modulus, Stress & Strain)</li>
+
+        <li class="problem-item">
+            <span class="q-label">১.</span> একটি তারের দৈর্ঘ্য $T_1$ টানে থাকলে $L_1$ এবং $T_2$ টানে থাকলে $L_2$। কোনো টান না থাকলে তারটির দৈর্ঘ্য কত হবে?
+            <div class="ans-tag">[উত্তর: $\frac{T_2 L_1 - T_1 L_2}{T_2 - T_1}$] [2015]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">২.</span> ভিন্ন উপাদানের দুটি অনুরূপ তারকে একই বলের সাহায্যে টানা হল। তার দুটির দৈর্ঘ্য বৃদ্ধির পার্থক্য $0.25\text{ m}$। যদি তার দুটির উপাদানের ইয়ং গুণাঙ্কের অনুপাত $5 : 3$ হয়, তবে এদের প্রত্যেকটির দৈর্ঘ্য বৃদ্ধির পরিমাণ নির্ণয় করো।
+            <div class="ans-tag">[উত্তর: $0.375\text{ m}$, $0.625\text{ m}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">৩.</span> কোনো ধাতব তারের দৈর্ঘ্য $l_1\text{ m}$ যখন তারের টান $4\text{ N}$। আবার যখন তারের টান বৃদ্ধি পেয়ে $6\text{ N}$ হয়, তখন তারের দৈর্ঘ্য হয় $l_2\text{ m}$। যখন তারের টান $9\text{ N}$ হবে, তখন তারটির দৈর্ঘ্য কত হবে? তারটির প্রকৃত দৈর্ঘ্য কত?
+            <div class="ans-tag">[উত্তর: $(2.5l_2 - 1.5l_1)\text{ m}$ ; $(3l_1 - 2l_2)\text{ m}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">৪.</span> $2\text{ kg}$ ভর এবং $2.7\text{ g/cm}^3$ ঘনত্বের একটি বস্তুকে $1\text{ m}$ দীর্ঘ এবং $1\text{ mm}$ ব্যাসার্ধের একটি ইস্পাতের তারের সাহায্যে ঝুলিয়ে দেওয়া হল। বস্তুটিকে সম্পূর্ণ জলে নিমজ্জিত অবস্থায় রাখলে তারের দৈর্ঘ্য পরিবর্তন নির্ণয় করো। ইস্পাতের ইয়ং গুণাঙ্ক $= 2 \times 10^{12}\text{ dyn/cm}^2$ এবং $g = 980\text{ cm/s}^2$।
+            <div class="ans-tag">[উত্তর: প্রায় $0.02\text{ mm}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">৫.</span> $8\text{ m}$ দীর্ঘ একটি রবার তার একপ্রান্ত বদ্ধ অবস্থায় উল্লম্বভাবে ঝুলছে। রবারের ঘনত্ব $1.5\text{ g/cm}^3$ এবং ইয়ং গুণাঙ্ক $5 \times 10^6\text{ N/m}^2$। নিজের ভারে তারটির দৈর্ঘ্য বাড়বে কত? ($g = 10\text{ m/s}^2$)
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">৬.</span> $20\text{ m}$ দীর্ঘ একটি রবার তার একপ্রান্ত বদ্ধ অবস্থায় উল্লম্বভাবে ঝুলছে, নিজের ভারে তারটির দৈর্ঘ্য কতটা বেড়েছে? রবারের ঘনত্ব $1.5\text{ g/cm}^3$ এবং ইয়ং গুণাঙ্ক $49 \times 10^8\text{ dyn/cm}^2$।
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">৭.</span> $600\text{ cm}$ দীর্ঘ এবং $1\text{ mm}^2$ প্রস্থচ্ছেদের একটি তারের একপ্রান্তে $20\text{ kg}$ ভর ঝোলানো আছে। ভর সরিয়ে নিলে তারের দৈর্ঘ্য $599.5\text{ cm}$ হয়। তারটির (i) অনুদৈর্ঘ্য বিকৃতি, (ii) অনুদৈর্ঘ্য পীড়ন এবং (iii) তারের উপাদানের ইয়ং গুণাঙ্কের মান নির্ণয় করো।
+            <div class="ans-tag">[উত্তর: (i) $0.000834$, (ii) $1.96 \times 10^9\text{ dyn/cm}^2$, (iii) $2.35 \times 10^{12}\text{ dyn/cm}^2$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">৮.</span> $m_2$ ভরের একটি প্রস্তর খণ্ডকে $m_1$ ভরের একটি সুষম ধাতব দণ্ডের নীচের প্রান্তে সংযুক্ত করে দণ্ডটিকে ঘরের ছাদ থেকে ঝোলানো হল। দণ্ডটির প্রস্থচ্ছেদ $A$ হলে দণ্ডের মধ্যবিন্দুতে পীড়ন কত?
+            <div class="ans-tag">[উত্তর: $\frac{[(m_1/2) + m_2]g}{A}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">৯.</span> $10\text{ cm}$ ব্যাসার্ধবিশিষ্ট এবং $25\text{ kg}$ ভরবিশিষ্ট একটি গোলককে একটি ইস্পাতের তারের সাহায্যে বাড়ির ছাদ থেকে ঝোলানো হল। মেঝে থেকে ছাদের উচ্চতা $521\text{ cm}$। যখন গোলকটিকে সরল দোলকের পিণ্ডের মতো দোলানো হল তখন গোলকটির নিম্নাংশ মেঝে স্পর্শ করে গেল। দোলনের সর্বনিম্ন বিন্দুতে গোলকের গতিবেগ কত? ইস্পাতের ইয়ং গুণাঙ্ক $= 2 \times 10^{12}\text{ dyn/cm}^2$; তারের প্রাথমিক দৈর্ঘ্য $= 500\text{ cm}$ এবং তারের ব্যাসার্ধ $= 0.05\text{ cm}$।
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১০.</span> $3.5\text{ m}$ দৈর্ঘ্যের ও $10^{-6}\text{ m}^2$ প্রস্থচ্ছেদের ক্ষেত্রফলবিশিষ্ট একটি তারের অসহ পীড়ন $5 \times 10^7\text{ Pa}$। $3\text{ kg}$ ভরের একটি বস্তু তারটির সাথে যুক্ত করে তারটিকে সর্বোচ্চ কত কৌণিক বেগে ঘোরানো যাবে? [তারটির উপাদানের ইয়ং গুণাঙ্ক $Y = 2 \times 10^{11}\text{ Pa}$] [রুয়েট '২৫-২৬]
+            <div class="ans-tag">[উত্তর: $20.82\text{ rpm}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১১.</span> $1500\text{ kg}$ ভরের একটি লিফটের সর্বোচ্চ ধারণ ক্ষমতা $500\text{ kg}$। লিফটটি $5 \times 10^{-3}\text{ m}$ ব্যাসার্ধের একটি তার দিয়ে ঝুলে থাকলে এবং অসহ পীড়ন $3 \times 10^8\text{ N/m}^2$ হলে লিফটের সর্বোচ্চ ত্বরণ কত? [$g = 9.8\text{ m}\cdot\text{s}^{-2}$]
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১২.</span> $1.5 \times 10^6\text{ g}$ ভরের একটি লিফট একটি ইস্পাতের তারের সাহায্যে ঝুলানো আছে। উপরে উঠার সময় লিফটের সর্বোচ্চ ত্বরণ $1.2\text{ m/s}^2$ এবং অসহ পীড়ন $3.0 \times 10^8\text{ N/m}^2$ হলে তারের সর্বনিম্ন ব্যাসার্ধ কত? [RUET 13-14]
+            <div class="ans-tag">[উত্তর: $4.19 \times 10^{-3}\text{ m}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১৩.</span> $4\text{ kg}$ ভরের এবং $2.5\text{ g/cm}^3$ ঘনত্বের একটি বস্তুকে জলে সম্পূর্ণ নিমজ্জিত অবস্থায় $1\text{ m}$ দীর্ঘ ও $2\text{ mm}$ ব্যাসের একটি ধাতব তারের সাহায্যে ঝোলানো হল। তারটির দৈর্ঘ্য বৃদ্ধি কত হবে? ধাতুর ইয়ং গুণাঙ্ক $= 2 \times 10^{12}\text{ dyn/cm}^2$; $g = 980\text{ cm/s}^2$।
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১৪.</span> একটি ইস্পাতের তারের দৈর্ঘ্য $2\text{ m}$, ব্যাসার্ধ $1\text{ mm}$ এবং তারটির উপাদানের ইয়ং গুণাঙ্ক $2 \times 10^{11}\text{ N}\cdot\text{m}^{-2}$। তারটির একপ্রান্তে $1\text{ kg}$ ভরের একটি গোলক আটকে গোলকটিকে উল্লম্ব বৃত্তপথে $2\text{ rps}$ কৌণিক বেগে ঘোরানো হল। গোলকটি যখন উল্লম্ব বৃত্তপথের সর্বনিম্ন বিন্দুতে অবস্থান করে তখন তারটির দৈর্ঘ্য প্রসারণ কত হবে?
+            <div class="ans-tag">[উত্তর: $1\text{ mm}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১৫.</span> একই দৈর্ঘ্য ও প্রস্থচ্ছেদের দুটি দণ্ডের উপাদানের ইয়ং গুণাঙ্ক $Y_1$ ও $Y_2$। দণ্ড দুটির একটিকে অপরটির একপ্রান্তে যুক্ত করা হল। দেখাও যে, যুগ্ম দণ্ড দুটির তুল্য ইয়ং গুণাঙ্ক $= \frac{2Y_1 Y_2}{Y_1 + Y_2}$।
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১৬.</span> যদি সাধারণ শিলার স্থিতিস্থাপকতার সীমা $3 \times 10^8\text{ N/m}^2$ এবং গড় ঘনত্ব $3 \times 10^3\text{ kg/m}^3$ হয়, তবে পৃথিবীপৃষ্ঠে কোনো পর্বতের সর্বোচ্চ উচ্চতা কত হতে পারে? ($g = 10\text{ m/s}^2$) [WBJEE '93]
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১৭.</span> $0.3\text{ mm}$ ব্যাসার্ধবিশিষ্ট এবং $300\text{ cm}$ দীর্ঘ একটি তার $AB$-এর $A$ প্রান্তটি একটি স্থির অবলম্বনের সঙ্গে যুক্ত আছে এবং তারটি উল্লম্বভাবে ঝুলছে। তারটির মধ্যবিন্দুতে একটি $39.2\text{ N}$ ভার এবং নিম্নপ্রান্ত $B$-তে অপর একটি $39.2\text{ N}$ ভার যুক্ত আছে। তারের উপাদানের ইয়ং গুণাঙ্ক $2 \times 10^{12}\text{ dyn/cm}^2$ হলে $B$ প্রান্তের অবনমন নির্ণয় করো।
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১৮.</span> দুইটি ভিন্ন পদার্থের তৈরি প্রত্যেকটি $2\text{ m}$ লম্বা এবং $2\text{ mm}$ ব্যাসবিশিষ্ট দুটি তারকে সিরিজে জোড়া দিয়ে একটি যৌগিক তারে পরিণত করা হলো। তারটিতে কি পরিমাণ বল প্রয়োগ করা হলে এটি সর্বমোট $0.9\text{ mm}$ প্রসারিত হবে? ($Y_1 = 2 \times 10^{11}\text{ N/m}^2$ এবং $Y_2 = 7 \times 10^{11}\text{ N/m}^2$) [চুয়েট, কুয়েট, রুয়েট '২৩-২৪]
+            <div class="ans-tag">[উত্তর: $219.8\text{ N}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">১৯.</span> সমান দৈর্ঘ্য ও $r = 0.5\text{ cm}$ ব্যাসার্ধের দুটি ইস্পাত তারের সাহায্যে $45\text{ kg}$ ভরের একটি ট্রাফিক লাইট ঝুলানো আছে। যদি তার দুটি অনুভূমিকের সাথে $15^\circ$ কোণ তৈরি করে, তাহলে ট্রাফিক লাইটের ওজনের জন্য তার দুটির দৈর্ঘ্য বিকৃতির পরিমাণ কত হবে? দেওয়া আছে, ইস্পাতের ইয়ং এর গুণাঙ্ক $2 \times 10^{11}\text{ Nm}^{-2}$। [বুয়েট '১৯-২০]
+            <div class="ans-tag">[উত্তর: $5.4427 \times 10^{-5}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">২০.</span> একটি সুষম ব্যাসবিশিষ্ট তারের দৈর্ঘ্য $2\text{ m}$, ভর $15\text{ g}$ ও ঘনত্ব $8.9 \times 10^3\text{ kg m}^{-3}$। ওই তারের $1.6\text{ mm}$ দৈর্ঘ্য বৃদ্ধি করতে যদি $12\text{ kg}$ ভরের প্রয়োজন হয়, তবে তারের উপাদানের ইয়ং-এর গুণাঙ্ক নির্ণয় কর। [DU (প্রযুক্তি) Admission Test, 2020-21]
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">২১.</span> $0.3\text{ m}$ দৈর্ঘ্য ও $10^{-6}\text{ m}^2$ প্রস্থচ্ছেদের ক্ষেত্রফল বিশিষ্ট তারের মাথায় $10\text{ kg}$ ভর সংযুক্ত করে ঘোরানো হচ্ছে। তারের অসহ পীড়ন $4.8 \times 10^7\text{ N}\cdot\text{m}^{-2}$ হলে ব্যবস্থাটিকে সর্বোচ্চ কত কৌণিক বেগে অনুভূমিক তলে ঘোরানো যাবে?
+            <div class="ans-tag">[উত্তর: $4\text{ rad}\cdot\text{s}^{-1}$]</div>
+        </li>
+
+
+        <!-- Topic 2 -->
+        <li class="topic-header">২. অনুভূমিক তারের অবনমন (Depression / Sagging of Horizontal Wire)</li>
+
+        <li class="problem-item">
+            <span class="q-label">২২.</span> $2\text{ m}$ দীর্ঘ ও $0.8\text{ mm}$ ব্যাসের একটি ইস্পাতের তার উভয় প্রান্তে দৃঢ় ধারকের সাহায্যে অনুভূমিকভাবে টানা আছে। তারটির মধ্যবিন্দুতে একটি ভার ঝোলালে $1\text{ cm}$ পরিমাণ অবনমন হয়। ভারটির পরিমাণ নির্ণয় করো। দেওয়া আছে ইস্পাতের ইয়ং গুণাঙ্ক $= 20 \times 10^{11}\text{ dyn/cm}^2$। [WBJEE '95]
+            <div class="ans-tag">[উত্তর: $10.25\text{ g}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">২৩.</span> $1\text{ m}$ দীর্ঘ এবং $0.5 \times 10^{-6}\text{ m}^2$ প্রস্থচ্ছেদবিশিষ্ট একটি টানটান অনুভূমিক ধাতব তারের উভয়প্রান্ত দৃঢ়ভাবে আবদ্ধ। $100\text{ g}$ ভরের একটি বস্তুকে ওই তারটির মধ্যবিন্দুতে ঝোলানো হলে মধ্যবিন্দুর অবনমন নির্ণয় করো। প্রদত্ত, তারটির উপাদানের ইয়ং গুণাঙ্ক $2 \times 10^{11}\text{ N}\cdot\text{m}^{-2}$।
+            <div class="ans-tag">[উত্তর: $0.01\text{ m}$]</div>
+        </li>
+
+        <li class="problem-item">
+            <span class="q-label">২৪.</span> $1\text{ m}$ দৈর্ঘ্য এবং $0.8\text{ mm}$ ব্যাসের একটি ইস্পাতের তারের দু-প্রান্ত $A$ এবং $B$ বিন্দুতে দৃঢ়ভাবে সংবদ্ধ আছে। $AB$ রেখাটি অনুভূমিক এবং এটির দৈর্ঘ্য $1\text{ m}$। তারটির মধ্যবিন্দু থেকে একটি বস্তুকে ঝোলালে এই বিন্দুটি তার পূর্বাবস্থা থেকে $1\text{ cm}$ নেমে যায়। বস্তুটির ভর নির্ণয় করো। ($Y = 2 \times 10^{12}\text{ dyn/cm}^2$) [HS '02]
+        </li>
+    </ul>
+</body>
+
+</html>
